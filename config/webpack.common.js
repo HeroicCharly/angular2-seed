@@ -24,8 +24,8 @@ module.exports = {
 
   output: {
     path: path.resolve(cwd, 'wwwroot'),
-    filename: 'js/[name].[contenthash].js',
-    chunkFilename: 'js/[name].[contenthash].js'
+    filename: 'js/[name].[chunkhash].js',
+    chunkFilename: 'js/[name].[chunkhash].js'
   },
 
   resolve: {

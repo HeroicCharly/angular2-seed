@@ -11,7 +11,7 @@ module.exports = webpackMerge(commonConfig, {
 
   output: {
     path: path.resolve(cwd, 'wwwroot'),
-    filename: 'js/[name].js',
+    filename: 'js/[name].[chunkhash].js',
     devtoolModuleFilenameTemplate: '../[resource-path]'
   },
 

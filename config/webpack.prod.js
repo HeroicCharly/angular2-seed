@@ -25,7 +25,7 @@ module.exports = webpackMerge(commonConfig, {
       }
     }),
     new webpack.DefinePlugin(GLOBALS),
-
+    new webpack.HashedModuleIdsPlugin(),
     new ExtractTextPlugin('[name].[contenthash].css'),
   ]
 });
