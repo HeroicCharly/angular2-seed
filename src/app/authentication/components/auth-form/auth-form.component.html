@@ -1,0 +1,24 @@
+<form (ngSubmit)="onSubmit()" #authForm="ngForm">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input
+      name="username"
+      type="text"
+      placeholder="Username"
+      required
+      [(ngModel)]="username">
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input
+      type="password"
+      name="password"
+      placeholder="Password"
+      required
+      [(ngModel)]="password">
+  </div>
+  <div class="form-group">
+    <input type="submit" [disabled]="authForm.invalid">
+  </div>
+</form>
