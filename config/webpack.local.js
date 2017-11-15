@@ -13,6 +13,7 @@ module.exports = webpackMerge(commonConfig, {
     compress: true,
     inline: true,
     hot: true,
+    open: true,
     publicPath: '/',
     quiet: true,
     historyApiFallback: true,
