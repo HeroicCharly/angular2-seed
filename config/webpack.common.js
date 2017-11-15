@@ -49,7 +49,6 @@ module.exports = {
             options: {
               configFile: path.resolve(cwd, 'tslint.json'),
               tsconfigFile: path.resolve(cwd, 'src', 'tsconfig.json'),
-              failOnHint: true
             }
           }
         ]
