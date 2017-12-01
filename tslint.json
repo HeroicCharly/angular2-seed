@@ -32,9 +32,6 @@
     "no-consecutive-blank-lines": {
       "severity": "warn"
     },
-    "no-console": {
-      "severity": "warn"
-    },
     "no-debugger": true,
     "no-duplicate-imports": true,
     "no-duplicate-variable": [
