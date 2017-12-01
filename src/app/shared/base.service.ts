@@ -94,11 +94,17 @@ export class BaseService {
   /**
    * Extracts the data from the HTTP request.
    * @param res Response from the HTTP call.
+   * @returns The json response in JSend format.
    */
   protected extractData<T>(res: Response): JSendReply<T> {
     return res.json() || {};
   }
 
+  /**
+   * Parses the json response while throwing it as an error.
+   * This is for bubbling up the error from the first Observable to its implementation.
+   * @param err Response object containing the error details from the API.
+   */
   protected errorHandler(err: Response): Observable<JSendReply<any>> {
     let body = err.json() as JSendReply<any>;
     return Observable.throw(body);
